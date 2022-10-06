@@ -1,0 +1,7 @@
+<h1 class="h-30 p-2 text-bg-dark rounded-2">Editing friend...</h1>
+<%= render "form", friend: @friend %>
+<br>
+<div class="btn-group" role="group" aria-label="example">
+  <%= link_to "Show this friend", @friend, class:"btn btn-dark" %>
+  <%= link_to "Back to friends", friends_path, class:"btn btn-dark" %>
+</div>

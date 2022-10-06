@@ -1,0 +1,13 @@
+<div>
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class:"btn btn-info" %>      
+  <%= link_to "Back to friends", friends_path, class:"btn btn-info" %>
+</div>
+<br>
+
+<div class="h-100 p-5 text-bg-dark rounded-3">
+  <h2>Friend's Information</h2>
+  <p><%= render @friend %></p>
+  <div>
+    <%= button_to "Delete this friend", @friend, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger"%>
+  </div>
+</div>
